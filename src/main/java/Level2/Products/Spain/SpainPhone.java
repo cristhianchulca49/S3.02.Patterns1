@@ -2,9 +2,9 @@ package Level2.Products.Spain;
 
 import Level2.Products.Phone;
 
-public class SpainPhone implements Phone {
+record SpainPhone(String phone) implements Phone {
     @Override
-    public String formatPhone(String phone) {
+    public String formatPhone() {
         return String.format("+34 %s %s %s %s",
                 phone.substring(0, 3),
                 phone.substring(3, 5),
