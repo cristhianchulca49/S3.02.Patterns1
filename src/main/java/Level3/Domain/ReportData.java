@@ -1,4 +1,4 @@
 package Level3.Domain;
 
-public class ReportData {
+public record ReportData(String id, String product, String name, String price) {
 }
