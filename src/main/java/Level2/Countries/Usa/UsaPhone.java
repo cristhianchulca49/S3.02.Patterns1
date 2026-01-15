@@ -1,6 +1,6 @@
-package Level2.Products.Usa;
+package Level2.Countries.Usa;
 
-import Level2.Products.Phone;
+import Level2.Interfaces.Phone;
 
 record UsaPhone(String phone) implements Phone {
     @Override

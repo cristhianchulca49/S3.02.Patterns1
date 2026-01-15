@@ -1,4 +1,4 @@
-package Level2.Products;
+package Level2.Interfaces;
 
 public interface Phone {
     String formatPhone();

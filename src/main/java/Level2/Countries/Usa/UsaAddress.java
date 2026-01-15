@@ -1,6 +1,6 @@
-package Level2.Products.Usa;
+package Level2.Countries.Usa;
 
-import Level2.Products.Address;
+import Level2.Interfaces.Address;
 
 record UsaAddress(String street, String city, String zipCode) implements Address {
     @Override
