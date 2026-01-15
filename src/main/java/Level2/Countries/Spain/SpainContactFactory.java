@@ -5,7 +5,7 @@ import Level2.Interfaces.Address;
 import Level2.Interfaces.Phone;
 
 
-record SpainContactFactory(String street, String city, String zipCode, String phone) implements ContactFactory {
+public record SpainContactFactory(String street, String city, String zipCode, String phone) implements ContactFactory {
 
     @Override
     public Address createAddressFormat() {
