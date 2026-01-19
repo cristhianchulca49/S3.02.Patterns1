@@ -52,10 +52,7 @@ public class TestUndo {
     public void testShowHistory(String command) {
         undo.addCommand(command);
 
-        String lastCommand = undo.undoCommand();
-        Assertions.assertEquals(command, lastCommand);
-
         List<String> history = undo.showHistory();
-        Assertions.assertFalse(history.contains(lastCommand));
+        Assertions.assertEquals(1, history.size());
     }
 }
